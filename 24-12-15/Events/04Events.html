@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+function prepareEventHandler()
+	{
+		var myParagraph = document.getElementById("p1id");
+		myParagraph.onclick = function()
+			{
+					alert("You clicked on paragraph");
+			}
+	
+	}
+	
+	window.onload = function()
+	{
+		prepareEventHandler();
+	}
+</script>
+<body bgcolor="wheat">
+<h1>WelCome To NeoRays</h1>
+<p>This is paragraph</p>
+<p1 id="p1id">Cilck here to get popup</p1>
+
+</body>
+</html>

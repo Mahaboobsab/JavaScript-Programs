@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor='wheat'>
+<script>
+var Instring=prompt("Enter String");
+function RepeatString(str)
+{
+			
+Str2 = str.toLowerCase().split("").sort().join("").match(/(.)\1+/g).length; 
+				
+	alert(Str2);	
+
+}	
+document.write(RepeatString(Instring));		
+ </script>     
+ </body>
+</html>

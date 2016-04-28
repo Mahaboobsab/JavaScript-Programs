@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+
+<body bgcolor='wheat'>
+<h1>Sorting array values</h1>
+<script>
+function sorter(array)
+{
+    var count = array.length - 1,swap,j,i;
+
+    for (j = 0; j < count; j++)
+    {
+
+        for (i = 0; i < count; i++)
+        {
+
+            if (array[i] > array[i + 1])
+            {
+                swap = array[i + 1];
+                array[i + 1] = array[i];
+                array[i] = swap;
+            }
+
+        }
+    }
+
+    return array;
+}
+
+alert(sorter([3,1,4,5,0,9,6,2,8,7]));
+
+</script>
+</body>
+</html>

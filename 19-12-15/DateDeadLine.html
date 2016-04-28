@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+var SelectDate = {
+"19-12-2015":["1 days to go"],
+"20-12-2015": ["2 days to go"],
+"21-12-2015": ["3 days to go"],
+"22-12-2015": ["4 days to go"],
+"23-12-2015": ["5 days to go"],
+}
+
+function DoSubMenu(value) {
+  if (value.length == 0) document.getElementById("SelectDate").innerHTML = "<option></option>";
+  else {
+    var citiesOptions = "";
+    for (cityId in SelectDate[value]) {
+      citiesOptions += "<option>" + SelectDate[value][cityId] + "</option>";
+    }
+    document.getElementById("SelectDate").innerHTML = citiesOptions;
+  }
+}
+
+function ResetCurrSel() {
+  document.getElementById("stateSelect").selectedIndex = 0;
+  document.getElementById("SelectDate").selectedIndex = 0;
+}
+
+</script>
+</head>
+
+<body bgcolor="wheat" onload="ResetCurrSel()">
+<h1>Select Dates</h1>
+
+<input type="text" value="19-12-2015" readonly="readonly">
+  <select id="stateSelect" size="1" onchange="DoSubMenu(this.value)">
+    <option ></option>
+    <option  style="color:green" >19-12-2015</span> </option >
+    <option style="color:orange" >20-12-2015</option>
+	<option style="color:pink" >21-12-2015</option>
+	<option style="color:yello" >22-12-2015</option>
+	<option style="color:red" >23-12-2015</option>select option:first-child { color:red; }
+  </select>
+  <select id="SelectDate" size="1">
+    <option></option>
+  </select>
+</body>
+</html>

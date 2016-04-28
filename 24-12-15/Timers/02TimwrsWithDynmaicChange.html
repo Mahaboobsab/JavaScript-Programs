@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="wheat">
+
+<h2>Spectacular Mountain</h2>
+<p>This will change automatically 5 sec </p>
+<img id="paraid" src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+<script>
+var mypara = document.getElementById("paraid");
+var paraArray = ["pic_mountain.jpg","download1.jpg","download2.jpg","download3.jpg","download4.jpg","download5.jpg"];
+var paraIndex = 0;
+function changePara()
+{
+	mypara.setAttribute("src",paraArray[paraIndex]);
+	paraIndex++;
+	if(paraIndex >= paraArray.length)
+	{
+		paraIndex=0;
+	}
+}
+var intervalHandle = setInterval(changePara,500);
+
+mypara.onclick = function()
+{
+		clearInterval(intervalHandle);
+}
+</script>
+</body>
+</html>

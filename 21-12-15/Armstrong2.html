@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html>
+<body bgcolor="wheat">
+<script>
+var num = prompt("Enter number");
+
+function ArmstongNumber() 
+{
+var number=num;
+var digit = 0;
+var cube = 0;
+var scube=0;
+var temp=number;
+
+while( number != 0)
+{
+	digit=number%10;
+	cube=digit*digit*digit;
+	scube=cube+scube;
+	number = parseInt(number/10);
+}
+if(scube == temp)
+{
+	alert("Given number is Armstrong number");
+}
+else
+{
+	alert("Given number is not Armstrong number");
+}
+  
+
+ 
+}
+ArmstongNumber();
+</script>
+</body>
+</html>

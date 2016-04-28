@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor='blue'>
+<pre>
+<h1 align ="center">WelCome to NeoRays Software Solutions</h1>
+<h1 align ="center">Enter Your Details</h1>
+<HR>
+<script language = "JavaScript">
+function validate(){
+var num=document.myform.num.value;
+if (isNaN(num)){
+  document.getElementById("numloc").innerHTML=alert("Enter Numeric value only Example: 145");
+  return false;
+}else{
+  return true;
+  }
+}
+</script>
+</head>
+
+<body>
+<form name="myform" action="ValidateSucseesFullPage.html" onsubmit="return validate()" >
+Enter Your Employee Id: <input type="text" name="num"><span id="numloc"></span><br/>
+<input type="submit" value="submit">
+</form>
+</script>
+</pre>
+</body>
+</html>

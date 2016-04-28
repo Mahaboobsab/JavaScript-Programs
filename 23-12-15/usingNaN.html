@@ -1,0 +1,57 @@
+<html>
+<body>
+<script>
+var num1=54.6;
+//var num1=54321;
+//var num1="54321";
+//var num1="54321qwe";
+var newNum = Number(num1);
+if( isNaN(newNum) )
+	{
+		console.log("Is Not a number"+num1);
+	}
+	else
+	{
+		console.log("Is number"+num1);
+	}
+	
+	
+	if( !isNaN(newNum) )
+	{
+		console.log("Is  a number"+num1);
+	}
+	else
+	{
+		console.log("Is Not number"+num1);
+	}
+	
+var roundNum = Math.round(num1);
+		console.log("The round num of 54.6 Is number"+roundNum);
+		
+		var n1=12;
+		var n2=19;
+		var n3=16;
+		var n4=13;
+		var n5=11;
+		
+		var biggest = Math.max(n1,n2,n3,n4,n5);
+		var smallest = Math.min(n1,n2,n3,n4,n5);
+		console.log("The biggest num from 12,19,16,13,11 Is number"+biggest);
+		console.log("The smallest num from 12,19,16,13,11 Is number"+smallest);
+		
+		var number2 = 64;
+		var sqr = Math.sqrt(number2);
+		var pii = Math.PI;
+		var lognum = Math.log(number2);
+
+		console.log("The sqrt num from 64 Is "+sqr);
+		console.log("The log num from 64 Is "+lognum);
+		console.log("The PI "+pii);
+		
+		var randomnum = Math.random();
+		console.log("The random num  "+randomnum);
+		
+		
+</script>
+</body>
+</html>

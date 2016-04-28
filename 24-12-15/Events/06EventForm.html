@@ -1,0 +1,38 @@
+<html>
+<body bgcolor="wheat">
+<h1>WelCome To NeoRays</h1>
+<p>This is paragraph</p>
+<p1 id="p1id">Cilck here to get popup</p1>
+
+
+<form id="MyForm">
+<input type = "text" value="YourName" name="name" id="name"/>
+<br>
+<br>
+<input type = "text" value="YourEmail" name="email" id="EmailId"/>
+</form>
+
+
+<script>
+var EmailField = document.getElementById("EmailId");
+
+	EmailField.onfocus = function()
+	{
+		if (EmailField.value == "YourEmail")
+		{
+			EmailField.value="";
+		}
+	};
+	
+	EmailField.onblur = function()
+	{
+		if (EmailField.value == "")
+		{
+			EmailField.value="YourEmail";
+		}
+	};
+	
+	
+</script>
+</body>
+</html>

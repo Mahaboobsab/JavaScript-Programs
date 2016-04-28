@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+/*var meheboob = new Object();
+meheboob.Name = "Nadaf";
+meheboob.dob = "15/06/1992";
+meheboob.sal = 180000;
+console.log(meheboob);
+console.log(meheboob.Name);*/
+
+var meheboob1 = {name:"Nadaf",sal:7777778,age:22};
+var meheboob2 = {name:"Nadaf2",sal:6656658,age:23};
+
+function meheboobDetailse()
+	{
+			console.log(this.name + "Has the sal of "+this.sal+" His age of "+this.age);
+	}
+meheboob1.logDetails = meheboobDetailse;
+meheboob2.logDetails = meheboobDetailse;
+
+//meheboob1.meheboobDetailse();
+//meheboob1.logDetails();	
+meheboob2.logvetails();	
+
+//.log(meheboob.age);
+</script>
+</body>
+</html>

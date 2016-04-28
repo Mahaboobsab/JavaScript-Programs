@@ -1,0 +1,32 @@
+<!DICTYPE html>
+<html>
+<head>
+<title>Do-While Loop</title>
+</head>
+<body bgcolor='wheat'>
+<pre>
+<h1 align ="center">Fibonanci Series</h1>
+<h1 align ="center">Using Do While Loop</h1>
+<HR>
+<script language = "JavaScript">
+var a=1,b=1,c,i=1;
+document.write("Sr.No\tSeries"+"<br>");
+document.write(i+"\t"+a);
+document.write("<br>");
+i+=1;
+document.write(i+"\t"+b);
+document.write("<br>");
+do
+{
+	c=a+b;
+	i+=1;
+	document.write(i+"\t"+c);
+	a=b;
+	b=c;
+	document.write("<br>")
+}
+while(c<100);
+</script>
+</pre>
+</body>
+</html>

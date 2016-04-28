@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor = 'pink'>
+<h1>Java Script can change the image content</h1>
+<image id = "myImage" 
+onclick="changeImage()" src="pic_bulbon.gif" width="100" height="180">
+<p>Click the light to turn on/off</p>
+<script>
+function changeImage()
+{
+	var image = document.getElementById('myImage');
+	if(image.src.match("bulbon.gif"))
+	{
+		image.src= "pic_bulboff.gif";
+	}
+	else
+	{
+		image.src="pic_bulbon.gif";
+	}
+}
+</script>
+</body>
+</html>

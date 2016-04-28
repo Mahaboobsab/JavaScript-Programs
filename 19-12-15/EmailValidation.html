@@ -1,0 +1,16 @@
+<DOCTYPE html>
+<HTML>
+<HEAD>
+    <script type="text/Javascript">
+function NameValidation(el){
+ var ex = /^[a-zA-Z0-9_]*$/;
+ if(ex.test(el.value)==false){
+   el.value = el.value.substring(0,el.value.length - 1);
+  }
+}
+</script> 
+</HEAD>   
+<BODY  bgcolor="wheat">
+ Enter Email : <input type="text" placeholder="@gmail.com" id="" onkeyup="NameValidation(this);" />
+</BODY>
+</HTML>

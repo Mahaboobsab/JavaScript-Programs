@@ -1,0 +1,16 @@
+<DOCTYPE html>
+<HTML>
+<HEAD>
+    <script type="text/Javascript">
+function NameValidation(el){
+ var ex = /^[a-zA-Z]*$/;
+ if(ex.test(el.value)==false){
+   el.value = el.value.substring(0,el.value.length - 1);
+  }
+}
+</script> 
+</HEAD>   
+<BODY  bgcolor="wheat">
+ Enter Name : <input type="text" id="" onkeyup="NameValidation(this);" />
+</BODY>
+</HTML>

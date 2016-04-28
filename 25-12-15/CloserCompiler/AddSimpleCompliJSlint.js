@@ -1,0 +1,1 @@
+var x,y,addition,substraction,multification,division;function myFunction(a,b){addition=a+b;console.log("Addition is  "+addition);substraction=a-b;console.log("substraction is  "+substraction);multification=a*b;console.log("multification is  "+multification);division=a/b;console.log("division is  "+division)}myFunction(25,5);

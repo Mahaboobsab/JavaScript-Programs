@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> FORM PROCESSING</title>
+<script language="JavaScript">
+function processForm()
+{
+	var ans = "", col="";
+	var index = document.form1.Menu1.selectedIndex;
+	ans += "Your Selection :";
+	col = document.form1.Menu1.options[index].value;
+	switch(col)
+	{
+		case "R":
+		ans+= "Red";
+		break;
+		case "B":
+		ans+= "Blue";
+		break;
+		case "Y":
+		ans+= "Yellow";
+		break;
+		case "G":
+		ans+= "Green";
+		break;
+		case "O":
+		ans+= "Orange";
+		
+	}
+	alert(ans);
+//document.write(ans);
+}
+
+</script>
+</head>
+<body bgcolor='wheat'>
+<FORM NAME = "form1" >
+<h1 ALLIGN="CENTER"> <I> Pull Down Menu </I> </h1>
+</br>
+<P ALLIGN="LEFT"> Select Color Which You Like</p>
+<P ALLIGN="CENTER">
+<SELECT NAME = "Menu1">
+<OPTION VALUE = "R"> Red
+<OPTION VALUE = "B"> Blue
+<OPTION VALUE = "Y"> Green
+<OPTION VALUE = "G"> Yellow
+<OPTION VALUE = "O"> Orange
+</SELECT></P>
+<P ALLIGN="CENTER"><INPUT TYPE="BUTTON" VALUE="Display Selection" ONCLICK="processForm()"></p>
+</FORM>
+</body>
+</html>

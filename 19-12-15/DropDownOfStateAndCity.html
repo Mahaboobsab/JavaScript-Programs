@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+var StateAndCity = {
+Karnataka: ["Bengaluru"],
+Delhi: ["NewDelhi"],
+Goa: ["Panaji"],
+Maharashta: ["Mumbai"],
+Andrapradesh: ["Chennai"],
+}
+
+function DoSubMenu(value) {
+  if (value.length == 0) document.getElementById("SelectCity").innerHTML = "<option></option>";
+  else {
+    var citiesOptions = "";
+    for (cityId in StateAndCity[value]) {
+      citiesOptions += "<option>" + StateAndCity[value][cityId] + "</option>";
+    }
+    document.getElementById("SelectCity").innerHTML = citiesOptions;
+  }
+}
+
+function ResetCurrSel() {
+  document.getElementById("stateSelect").selectedIndex = 0;
+  document.getElementById("SelectCity").selectedIndex = 0;
+}
+
+</script>
+</head>
+
+<body bgcolor="wheat" onload="ResetCurrSel()">
+<h1>States And cityies</h1>
+  <select id="stateSelect" size="1" onchange="DoSubMenu(this.value)">
+    <option></option>
+    <option>Karnataka</option>
+    <option>Delhi</option>
+	<option>Maharashta</option>
+	<option>Andrapradesh</option>
+	<option>Goa</option>
+	
+	
+	
+	
+	
+  </select>
+  <select id="SelectCity" size="1">
+    <option></option>
+  </select>
+</body>
+</html>

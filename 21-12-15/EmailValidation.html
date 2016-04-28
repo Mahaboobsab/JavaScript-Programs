@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function NumberValidation(el){
+ var ex = /^[A-Za-z0-9_]*[-@\/]?[A-Za-z]*[-.\/]?[A-Za-z]*$/
+ if(ex.test(el.value)==false){
+   el.value = el.value.substring(0,el.value.length - 1);
+  }
+}
+</script>
+</head>
+<body bgcolor="wheat">
+
+Enter Email : <input type="text" id="" onkeyup="NumberValidation(this);"/>
+
+
+</body>
+<html>

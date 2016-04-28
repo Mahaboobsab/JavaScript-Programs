@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+
+var numberArray = [40, 1, 5, 200,33,66,77,88,99,3,2,7,87,0];
+
+function compareNumbers(a, b) {
+
+    return a - b;
+
+}
+console.log('numberArray:', numberArray);
+//console.log('numberArray with join :', numberArray.join());
+
+console.log('Sorted without a compare function:', numberArray.sort());
+
+console.log('Sorted with compareNumbers:', numberArray.sort(compareNumbers));
+
+</script>
+</body>
+</html>

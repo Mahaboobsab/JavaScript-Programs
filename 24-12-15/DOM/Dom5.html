@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>This is the title of JavaScript</title>
+</head>
+<body bgcolor="wheat">
+
+<h1>This is Heading</h1>
+<p>this is paragraph</p>
+	<ul id="myElment">
+		<li>First List</li>
+		<li>Second List</li>
+		<li>Third List</li>
+		<li>Fourth List</li>
+	</ul>
+<script>
+	var myNewElment = document.createElement("li");
+	var secondElment = myElment.getElementsByTagName("li")[1];
+	myElment.insertBefore(myNewElment,secondElment);
+					
+				
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script language = "javascript">
+
+
+	var a, b = 0;
+	a = parseInt(prompt("Enter number to reverse: "));
+
+
+
+	while(a > 0)
+	{		
+		b = b * 10
+		b = b + parseInt(a % 10)
+		a = parseInt(a / 10)
+	}
+	document.write("Reversed number: ", b)
+</script>
+</html>

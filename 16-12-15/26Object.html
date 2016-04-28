@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor='pink'>
+<script>
+function emp(id,name,salary)
+{
+	this.id=id;
+	this.name=name;
+	this.salary=salary;
+	
+	this.changeSalary=changeSalary;
+	
+	function changeSalary(otherSalary)
+	{
+		this.salary=otherSalary;
+	}
+}
+e= new emp(786,"MRNadaf",999999);
+document.write("Befor Adding"+"<br>"+"<br>");
+document.write(e.id+"&nbsp&nbsp"+e.name+"&nbsp&nbsp"+e.salary+"</br>"+"<br>");
+e.changeSalary(10000000);
+
+document.write("After Adding"+"<br>"+"<br>");
+document.write("<br>"+e.id+"&nbsp&nbsp"+e.name+"&nbsp&nbsp"+e.salary);
+</script>
+</body>
+</html>

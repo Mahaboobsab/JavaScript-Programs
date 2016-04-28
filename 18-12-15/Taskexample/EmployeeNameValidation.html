@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor='blue'>
+<pre>
+<h1 align ="center">WelCome to NeoRays Software Solutions</h1>
+<h1 align ="center">Enter Your Details</h1>
+<HR>
+<script language = "JavaScript">
+
+function onlyAlphabets() {
+
+  var regex = /^[a-zA-Z]*$/;
+  if (regex.test(document.f.nm.value)) {
+      return true;
+  } else {
+      document.getElementById("notification").innerHTML = alert("Alphabets Only Example: Meheboob Nadaf");
+      return false;
+  }
+
+
+}
+
+</script> 
+
+<form name="f" action="ValidateSucseesFullPage.html" onsubmit="return onlyAlphabets()">
+        Enter Your Name : <input type="text" name="nm">
+         <div id="notification"></div>
+         <input type="submit">
+      </form
+</script>
+</head>
+</pre>
+</body>
+</html>

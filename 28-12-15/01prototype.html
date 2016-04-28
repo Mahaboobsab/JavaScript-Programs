@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+
+
+/*myFather.prototype.name = function() 
+{
+    return this.firstName + " " + this.lastName;
+};*/
+//consoloe.log
+
+person.prototype.Myname = function() 
+{
+	console.log("MyName is "+this.firstName);
+    
+}
+
+var myFather = new person("John", "Doe", 50, "blue");
+var myMother = new person("Sally", "Rally", 48, "green");
+myFather.Myname();
+
+//document.getElementById("demo").innerHTML =
+//"My father is " + myFather.name(); 
+</script>
+
+</body>
+</html>

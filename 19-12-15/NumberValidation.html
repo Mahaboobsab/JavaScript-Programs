@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function NumberValidation(el){
+ var ex = /^[0-9]+\.?[0-9]*$/;
+ if(ex.test(el.value)==false){
+   el.value = el.value.substring(0,el.value.length - 1);
+  }
+}
+</script>
+</head>
+<body bgcolor="wheat">
+
+Enter Amount : <input type="text" id="" onkeyup="NumberValidation(this);"/>
+
+
+</body>
+<html>

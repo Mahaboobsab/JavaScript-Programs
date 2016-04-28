@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>This is the title of JavaScript</title>
+</head>
+<body bgcolor="wheat">
+<div id="div1">
+<h1>This is Heading</h1>
+<p>this is paragraph</p>
+	<ul id="myElment">
+		<li>First List</li>
+		<li>Second List</li>
+		<li>Third List</li>
+	</ul>
+</div>
+<div id="div2">
+</div>
+	<script>
+	var myNewElment = document.createElement("li");
+					myElment.appendChild(myNewElment);
+					myNewElment.innerHTML="Fourth List created by DOM method";
+					
+				var myText = document.createTextNode("  This is Through Text Node");
+				
+		myNewElment.appendChild(myText);
+	
+	var newHeading = document.createElement("h1");
+	var newParaGraph = document.createElement("p");
+	
+	//newHeading.innerHTML="This is new Heding";
+	//newParaGraph.innerHTML="This is new Paragraph";
+	
+	var h1Text = document.createTextNode("Meheboob is the one of the best Engineer in the world");
+	var p1Text = document.createTextNode("Now he is working for Neo Rays");
+	
+	newHeading.appendChild(h1Text);
+	newParaGraph.appendChild(p1Text);
+	
+	document.getElementById("div2").appendChild(newHeading);
+	document.getElementById("div2").appendChild(newParaGraph);
+	
+	</script>
+</body>
+</html>

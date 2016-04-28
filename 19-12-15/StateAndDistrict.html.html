@@ -1,0 +1,64 @@
+<DOCTYPE html>
+<html>
+<head>
+
+<script type= "text/JavaScript">
+var stateObject = {
+    "Karnataka": {
+        "Bebgaluru": [],
+        "Belagavi": []
+    },
+    "Maharashtra": {
+        "Kolhapur": [],
+        "Miraj": []
+    }
+}
+window.onload = function () {
+    var StateSel1 = document.getElementById("StateSel"),
+        stateSel = document.getElementById("stateSel"),
+        districtSel = document.getElementById("districtSel");
+    for (var country in stateObject) {
+        StateSel1.options[StateSel1.options.length] = new Option(country, country);
+    }
+    StateSel1.onchange = function () {
+        stateSel.length = 1;
+        districtSel.length = 1; 
+        if (this.selectedIndex < 1) return; 
+        for (var state in stateObject[this.value]) {
+            stateSel.options[stateSel.options.length] = new Option(state, state);
+        }
+    }
+   
+    stateSel.onchange = function () {
+
+        for (var i = 0; i < district.length; i++) {
+            
+        }
+    }
+}
+</script>
+</head>
+
+<body bgcolor="wheat">
+<h1>State and Districts</h1>
+<form name="myform" id="myForm">
+    Select State: <select name="state" id="StateSel" size="1">
+        <option value="" selected="selected">Select State</option>
+    </select>
+    <br>
+    <br>
+    Select District: <select name="district" id="stateSel" size="1">
+        <option value="" selected="selected">Please select State first</option>
+    </select>
+    <br>
+	<input type="submit" value="Search" name="district" id="districtSel"  >
+        
+    <br>
+	
+   </form> 
+     
+   
+
+
+</body>
+</html>

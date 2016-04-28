@@ -1,0 +1,26 @@
+<html>
+<body bgcolor='blue'>
+<h1>EMPLOYEE NAME VALIDATION</h1>
+<script>
+function onlyAlphabets() {
+
+  var regex = /^[a-zA-Z]*$/;
+  if (regex.test(document.f.nm.value)) {
+      return true;
+  } else {
+      document.getElementById("notification").innerHTML = alert("Alphabets Only");
+      return false;
+  }
+
+
+}
+
+</script> 
+
+<form name="f" onsubmit="return onlyAlphabets()">
+         <input type="text" name="nm">
+         <div id="notification"></div>
+         <input type="submit">
+      </form
+</body>
+</html>
